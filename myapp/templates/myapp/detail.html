@@ -1,6 +1,18 @@
 {% extends 'myapp/base.html' %}
 {% block body %}
 
-This is a detail View
+<div class="flex p-10">
+    <div>
+        <img src="https://www.nicekicks.com/files/2020/06/air-jordan-jumpman-logo.jpg" alt="">
+    </div>
+    <div class="pl-10">
+        <div class="text-4xl mb-4">{{ product.name }}</div>
+        <div class="mb-4">{{ product.description }}</div>
+        <div class="mb-4 text-black font-bold">${{ product.price }}0</div>
+        <div>
+            <button id="checkout-button" class="bg-indigo-500 text-white px-4 py-2 rounded-sm">Buy</button>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
