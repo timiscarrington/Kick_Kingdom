@@ -1,0 +1,19 @@
+{% extends 'myapp/base.html' %}
+{% block body %}
+
+This is the index page
+{% for product in products %}
+<div class="product shadow-lg w-1/4 rounded-lg m-10">
+    <div class="product-image">
+        <img src="" alt="">
+    </div>
+
+</div>
+
+{% endfor %}    
+{% endblock %}
+
+   {{ product.name }}
+    {{ product.price }}
+    {{ product.description }}
+    
